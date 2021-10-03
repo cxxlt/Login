@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c    o    o    l    t</title>
+    <script>
+        window.onload = function(){
+          var originalTitle = document.title;
+          var animatedTitles = ['👺', '🙏', '🍁', '😈' ,'🧢'];
+          var animatedTitles1 = ['🙏', '🍁', '👺', '👺', '❌'];
+          var index = 0;
+  document.title = animatedTitles[index] + ' ' + originalTitle + ' ' + animatedTitles1[index];
+          index++;
+  setInterval(
+            function(){
+              document.title = animatedTitles[index] + ' ' + originalTitle + ' ' + animatedTitles1[index];
+              index++;
+              if(index == animatedTitles.length){
+                index = 0;
+              }
+            },
+            500
+          );
+        }
+      </script>
+    <link rel="icon" href="https://cdn.frankerfacez.com/emoticon/421390/1">
+    <link rel="icon" href="https://images.emojiterra.com/google/android-11/128px/1f60e.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e38f6789d.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>cxxlt</h1></a>
+    </header>
+      
+    <main>
+        <form>
+            <section class="inputs-container">
+                <input type="email" placeholder="exemplo@cxxlt.com" required>
+
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="********" required>
+                    <i class="far fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="far fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                </div>
+                <div class="password-container">
+                    <input type="password" id="field-password1" class="field-password" placeholder="********" required>
+                    <i class="far fa-eye" id="eye1" onclick="showPassword1()"></i>
+                    <i class="far fa-eye-slash" id="eye-slash1" onclick="showPassword1()"></i>
+                </div>
+                </section>
+                <section class="password-infos">
+                    <div>
+                        <input type="checkbox">
+                        <span>lembrar senha</span>
+                    </div>
+                </section>
+    
+                    <button id="btn-register" formaction="/index.html">registrar-se</button>
+    
+                <section class="links-container">
+                    <span>ou registre-se usando:</span>
+    
+                    <aside>
+                        <a href="https://www.google.com"><i class="fab fa-google-plus-square google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square twitter"></i></a>
+                    </aside>
+                </section>
